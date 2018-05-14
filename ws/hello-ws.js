@@ -34,6 +34,7 @@ net.createServer(function(sock) {
         var name = dd1[1];
         var age = dd1[2];
         
+        
 	var  sql = "insert into student (id, name, age) values (" + id + ",'" + name + "'," + age + ")";
 
         connection.query(sql,function (err, result) {
