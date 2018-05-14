@@ -28,7 +28,7 @@ net.createServer(function(sock) {
         // Write the data back to the socket, the client will receive it as data from the server
         sock.write('You said "' + data + '"');
         
-        // data = “123，liping，20”；
+        // data = “123，liping，30”；
         var dd = data.splitby(",");
         var id = dd[0];
         var name = dd[1];
