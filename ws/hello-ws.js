@@ -28,13 +28,13 @@ net.createServer(function(sock) {
         // Write the data back to the socket, the client will receive it as data from the server
         sock.write('You said "' + data + '"');
         
-        // data = “123，liping，20”；
+        // data = “123，liping，30”；
         var dd1 = data.splitby(",");
         var id = dd1[0];
         var name = dd1[1];
         var age = dd1[2];
-
-        var  sql = "insert into student (id, name, age) values (" + id + ",'" + name + "'," + age + ")";
+        
+	var  sql = "insert into student (id, name, age) values (" + id + ",'" + name + "'," + age + ")";
 
         connection.query(sql,function (err, result) {
             if(err){
