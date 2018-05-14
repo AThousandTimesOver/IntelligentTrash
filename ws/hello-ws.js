@@ -29,10 +29,10 @@ net.createServer(function(sock) {
         sock.write('You said "' + data + '"');
         
         // data = “123，liping，20”；
-        var dd = data.splitby(",");
-        var id = dd[0];
-        var name = dd[1];
-        var age = dd[2];
+        var dd1 = data.splitby(",");
+        var id = dd1[0];
+        var name = dd1[1];
+        var age = dd1[2];
 
         var  sql = "insert into student (id, name, age) values (" + id + ",'" + name + "'," + age + ")";
 
