@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(session({
     cookieName: 'session',
     secret: 'random_string_goes_here',
-    duration: 1 * 60 * 1000,
-    activeDuration: 0.5 * 60 * 1000,
+    duration: 10 * 60 * 1000,
+    activeDuration: 5 * 60 * 1000,
   }));
 
 app.use(express.static('statics'));

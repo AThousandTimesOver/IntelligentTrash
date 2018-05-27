@@ -151,11 +151,17 @@
     }
 
 
-    var circle = setInterval(function() {
+    function refreshData(){
         readfromServer(function(status){
             status = JSON.parse(status)
             renderTrash(status);
         });
+    }
+
+    refreshData();
+    
+    var circle = setInterval(function() {
+        refreshData();
     }, 5000);
 
 </script>
