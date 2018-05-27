@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>登录页面</title>  
+  
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/> 
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="/js/login.js"></script>  
+</head>  
+  
+<body>  
+<div id="login_frame">  
+    <h1>智能垃圾站管理系统</html>
+  
+    <!-- <p id="image_logo"><img src="https://www.easyicon.net/api/resizeApi.php?id=1578&size=48"></p>   -->
+  
+    <form method="post" action="/isexist">  
+  
+        <p><label class="label_input">用户名</label><input type="text" id="username" class="text_field"/></p>  
+        <p><label class="label_input">密码</label><input type="password" id="password" class="text_field"/></p>  
+  
+        <div id="login_control">  
+            <input type="button" id="btn_login" value="登录" onclick="login()"/>  
+            <!-- <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>  -->    
+        </div>
+  
+    </form>  
+</div>  
+ 
+<!--                                                            网页上添加 安全退出 这几个字
+<div id="login_out">
+        <a id="quit" href="http://www.hao123.com">安全退出</a>   
+        或<a href="quit1.html">跳转链接</a>
+        或<button onclick="window.location.href='http://192.168.0.104:8080'">安全退出</button>
+    </div> 
+-->
+</body>
